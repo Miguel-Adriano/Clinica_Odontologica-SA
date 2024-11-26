@@ -1,0 +1,35 @@
+.service-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.confirmar {
+    height: 40px;
+    width: 100%;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #3494ee;
+  }
+  
+  .confirmar:hover {
+    background: #91bcfa;
+  }
