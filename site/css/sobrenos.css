@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.services-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.services-text {
+    flex: 1;
+    text-align: justify;
+}
+
+.services-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.services-image {
+    flex: 1;
+    text-align: center;
+}
+
+.services-image img {
+
+    height: auto;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Estilo do botão "Marque uma consulta" */
+.hero {
+margin-top: 40px;
+padding: 40px;
+height: 40vh; /* Defina a altura como a altura da janela de visualização */
+background: url('/Clinica_Odontologica/site/img/consultorio5.jpg') center center / cover no-repeat;
+text-align: center;
+color: white;
+
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+
+.botao-agende {
+
+color: #000; /* Cor do texto */
+font-family: Arial, sans-serif; /* Fonte do texto */
+font-size: 16px; /* Tamanho da fonte */
+padding: 10px 20px; /* Espaçamento interno */
+border: none; /* Sem borda */
+border-radius: 25px; /* Borda arredondada */
+background-color: rgba(255, 255, 255, 1); /* Fundo menos translúcido ao passar o mouse */
+box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
+cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+
+.botao-agende:hover {
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido */
+}
