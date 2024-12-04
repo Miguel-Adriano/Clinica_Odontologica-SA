@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.services {
+    display: flex; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaço entre os serviços */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os serviços quebrem para a linha seguinte quando necessário */
+}
+
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 30%; /* Cada serviço ocupa 30% da largura */
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.service img {
+    width: 100%; /* A imagem vai ocupar toda a largura do contêiner */
+    height: auto;
+}
+
+.service-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro da div */
+}
+
+.service-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.service-price {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    max-height: 120px; /* Limita a altura da descrição */
+    overflow: hidden; /* Impede que a descrição ultrapasse o limite */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto ultrapassar o limite */
+}
+
+.service-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.service-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Efeito de brilho (destaque) */
+.highlight {
+    
+    box-shadow: 0px 0px 15px 5px rgba(169, 169, 169, 0.8); /* Brilho cinza ao redor */
+
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+}
+
+/* Responsividade - Ajusta o layout para telas menores */
+@media (max-width: 768px) {
+    .service {
+        width: 100%; /* Ocupa 100% da largura em telas menores */
+    }
+}
+
